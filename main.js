@@ -35,7 +35,7 @@ Apify.main(async () => {
                 log.info('Sending email');
                 await Apify.call('apify/send-mail', {
                     to: 'jiri.fabian@gmail.com',
-                    subject: 'Aargh available!',
+                    subject: `${book} available!`,
                     text: `Buy now - ${url}`,
                 });
             }
